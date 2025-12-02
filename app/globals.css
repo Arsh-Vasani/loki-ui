@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+:root {
+  --background: #020617; /* slate-950 */
+  --foreground: #e5e7eb; /* zinc-200 */
+  --accent: #22c55e; /* emerald-400, subtler than 500 */
+  --accent-soft: #020617; /* keep background almost pure black */
+  --accent-strong: #4ade80; /* emerald-300 */
+  --border-subtle: rgba(30, 64, 175, 0.45); /* deep slate/indigo mix */
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background:
+    radial-gradient(circle at top, rgba(15, 23, 42, 0.85) 0, #020617 45%, #020617 100%),
+    radial-gradient(circle at bottom, rgba(15, 23, 42, 0.65), #020617 55%);
+  color: var(--foreground);
+}
+
+.glass-panel {
+  @apply bg-slate-950/80 border border-slate-800 shadow-[0_0_40px_rgba(15,23,42,0.7)] backdrop-blur-xl;
+}
+
+.emerald-ring {
+  @apply ring-1 ring-emerald-500/25 ring-offset-2 ring-offset-slate-950;
+}
+
+.orbit {
+  background: radial-gradient(circle at 0% 0%, rgba(30, 64, 175, 0.45), transparent 60%),
+    radial-gradient(circle at 100% 100%, rgba(15, 23, 42, 0.9), transparent 55%);
+}
+
+.grid-lines {
+  background-image: linear-gradient(to right, rgba(15, 23, 42, 0.85) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(15, 23, 42, 0.85) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+.fade-in-up {
+  animation: fade-in-up 0.8s ease-out forwards;
+}
+
+.fade-in-delay-1 {
+  animation-delay: 0.1s;
+}
+
+.fade-in-delay-2 {
+  animation-delay: 0.18s;
+}
+
+.fade-in-delay-3 {
+  animation-delay: 0.26s;
+}
+
+@keyframes fade-in-up {
+  0% {
+    opacity: 0;
+    transform: translateY(12px) scale(0.98);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.float-slow {
+  animation: float-slow 10s ease-in-out infinite;
+}
+
+@keyframes float-slow {
+  0%,
+  100% {
+    transform: translateY(0px) translateX(0px);
+  }
+  50% {
+    transform: translateY(-14px) translateX(6px);
+  }
+}
