@@ -1,17 +1,15 @@
 export function UseCasesSection() {
   return (
     <section className="mt-18 space-y-8">
-      <div className="flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
-        <div>
-          <h2 className="text-2xl font-semibold tracking-tight text-slate-100 sm:text-3xl">
-            Perfect for dark-mode projects
-          </h2>
-          <p className="mt-2 max-w-xl text-base leading-relaxed text-slate-400">
-            Use our components to build admin panels, internal tools, analytics
-            dashboards, and any dark-mode interface. Copy what you need, customize
-            to match your brand.
-          </p>
-        </div>
+      <div>
+        <h2 className="text-2xl font-semibold tracking-tight text-slate-100 sm:text-3xl text-center">
+          Perfect for dark-mode projects
+        </h2>
+        <p className="mt-2 max-w-2xl mx-auto text-base leading-relaxed text-slate-400 text-center">
+          Use our components to build admin panels, internal tools, analytics
+          dashboards, and any dark-mode interface. Copy what you need, customize
+          to match your brand.
+        </p>
       </div>
 
       <div className="grid gap-5 md:grid-cols-3">

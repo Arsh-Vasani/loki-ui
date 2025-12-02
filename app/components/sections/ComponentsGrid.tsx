@@ -24,16 +24,14 @@ export function ComponentsGridSection() {
       id="components"
       className="fade-in-up fade-in-delay-3 mt-16 space-y-6 md:mt-20"
     >
-      <div className="flex items-center justify-between gap-4">
-        <div>
-          <h2 className="text-2xl font-semibold tracking-tight text-slate-100 sm:text-3xl">
-            Browse our component library
-          </h2>
-          <p className="mt-2 text-base text-slate-400">
-            Copy any component code directly into your project and customize as
-            needed
-          </p>
-        </div>
+      <div>
+        <h2 className="text-2xl font-semibold tracking-tight text-slate-100 sm:text-3xl text-center">
+          Browse our component library
+        </h2>
+        <p className="mt-2 text-base text-slate-400 text-center">
+          Copy any component code directly into your project and customize as
+          needed
+        </p>
       </div>
 
       <div className="grid gap-5 md:grid-cols-3">
